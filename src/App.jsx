@@ -93,8 +93,8 @@ function App() {
 
         {(winner || hasDraw) && <GameOver winner={winner} resetGame={gameReset} />}
         <ol id="players" className="highlight-player">
-          <PlayerDetail nameEditable={'Player 1'} isActive={activePlayer === PLAYERS.X} symbol={PLAYERS.X} onSave={handlePlayersName} />
-          <PlayerDetail nameEditable={'Player 2'} isActive={activePlayer === 'O'} symbol={'O'} onSave={handlePlayersName} />
+          <PlayerDetail nameEditable={'Player 1'} isActive={activePlayer === PLAYERS.X} symbol={'X'} onSave={handlePlayersName} />
+          <PlayerDetail nameEditable={'Player 2'} isActive={activePlayer === PLAYERS.O} symbol={'O'} onSave={handlePlayersName} />
         </ol>
         <GameBoard togglePlayer={handleSelectedSquare} board={gameBoard} />
       </div>
